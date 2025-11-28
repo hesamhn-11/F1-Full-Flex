@@ -1,0 +1,1003 @@
+.fvh {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    >header {
+        width: 100%;
+        height: 75px;
+        position: relative;
+
+        .nav {
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            z-index: 999;
+
+            >img {
+                width: 10%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover contain;
+                border: 5px solid red;
+            }
+
+
+            >nav {
+                width: 90%;
+                height: 100%;
+                justify-content: space-between;
+                display: flex;
+
+                >* {
+                    font-family: "Audiowide", sans-serif;
+                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+
+                    >li {
+                        color: white;
+                        font-size: 20px;
+                        margin: 25px 15px;
+
+
+                    }
+                }
+
+                /* start menu  */
+                >.menu {
+
+                    >li {
+                        &:nth-child(2) {
+                            margin-right: 27px;
+                        }
+
+                        &:hover {
+                            >a {
+                                &:first-of-type {
+                                    scale: 1.15;
+                                }
+
+                                &::after {
+                                    opacity: 1;
+                                    width: 100%;
+                                }
+                            }
+
+                        }
+
+                        >a {
+                            position: relative;
+
+                            >span {
+                                position: absolute;
+                                top: 5px;
+                            }
+
+                            &::after {
+                                width: 0;
+                                height: 2.5px;
+                                z-index: 2;
+                                background-color: white;
+                                content: '';
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                opacity: 0;
+                                transition: .4s;
+                            }
+                        }
+
+                        >.home {
+                            font-size: 25px;
+
+                            &::after {
+                                width: 100%;
+                                height: 4.5px;
+                                z-index: 2;
+                                background-color: white;
+                                content: '';
+                                position: absolute;
+                                bottom: -8px;
+                                left: 0;
+                                opacity: 1;
+                                transition: .4s;
+                            }
+                        }
+
+                        &:hover {
+                            >ul {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+
+                        >.driver {
+                            height: calc(100vh - 75px);
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-content: center;
+                            margin-right: 15px;
+
+                            >li {
+                                &:hover {
+                                    >div {
+                                        scale: 1.2;
+                                    }
+                                }
+
+
+                                >div {
+                                    margin: 55px;
+                                    margin-top: 15px;
+                                    padding: 4px;
+                                    width: 70px;
+                                    height: 195px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                    transition: 0.3s;
+
+                                    &:first-of-type {
+                                        margin-left: 20px;
+                                    }
+
+                                    >img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+
+                                    >h3 {
+                                        width: 250%;
+                                        padding: 7px;
+                                        font-size: 15px;
+                                        text-transform: uppercase;
+                                        /* background-color: rgba(0, 0, 0, 0.651); */
+                                        border-radius: 5%;
+                                    }
+                                }
+                            }
+                        }
+
+                        >.teams {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-content: space-evenly;
+
+                            >li {
+                                height: 180px;
+                                margin: 1%;
+                                margin-top: 40px;
+                                transition: 0.5s;
+
+                                &:hover {
+                                    scale: 1.4;
+                                }
+
+                                /* color of logo  */
+                                &:nth-child(1) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: rgb(14, 178, 219);
+                                                border: 5px solid rgb(14, 178, 219);
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(2) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: rgb(7, 236, 168);
+                                                border: 5px solid rgb(7, 236, 168);
+
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(3) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(4) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: rgb(60, 68, 66);
+                                                border: 5px solid rgb(60, 68, 66);
+
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(5) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: rgb(0, 255, 34);
+                                                border: 5px solid rgb(0, 255, 34);
+
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(6) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: rgb(255, 94, 0);
+                                                border: 5px solid rgb(255, 94, 0);
+
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(7) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: rgb(23, 114, 106);
+                                                border: 5px solid rgb(23, 114, 106);
+
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(8) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: rgb(75, 115, 224);
+                                                border: 5px solid rgb(75, 115, 224);
+
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(9) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: rgb(21, 22, 24);
+                                                border: 5px solid rgb(21, 22, 24);
+
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &:nth-child(10) {
+                                    >div {
+
+                                        >h2 {
+                                            >i {
+                                                background-color: blue;
+                                                border: 5px solid blue;
+
+                                                >img {
+                                                    scale: 1.1;
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                /* end of logo color  */
+
+                                >div {
+                                    position: relative;
+                                    background-color: rgba(0, 0, 0, 0.658);
+                                    border-radius: 5%;
+                                    width: 250px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 20px;
+
+                                    >h2 {
+                                        font-size: 20px;
+                                        gap: 25px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        >i {
+                                            border: 5px solid red;
+                                            background-color: red;
+                                            border-radius: 50%;
+
+                                            >img {
+                                                object-fit: cover contain;
+                                                object-position: center;
+                                            }
+                                        }
+                                    }
+
+                                    >img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+
+                                }
+                            }
+                        }
+
+                        &:first-of-type {
+                            margin-left: 20px;
+                            transition: .2s;
+                        }
+
+                        >.result {
+                            width: 100%;
+                            height: 70px;
+                            position: absolute;
+                            background-color: rgba(0, 0, 0, 0.884);
+                            top: 70px;
+                            left: 0;
+                            display: flex;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: 0.5s;
+                            justify-content: left;
+                            align-items: center;
+                            font-size: 18px;
+
+                            >li {
+                                margin: 0 15px;
+                                /* border: 0.5px solid white; */
+                                padding: 1px;
+                                border-radius: 5%;
+
+                                &:hover {
+                                    scale: 1.1;
+
+                                    >a {
+                                        background-color: white;
+                                        color: rgba(133, 113, 113, 0.842);
+                                    }
+                                }
+
+                                >a {
+                                    padding: 5px;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba(133, 113, 113, 0.842);
+                                    border-radius: 5%;
+                                }
+                            }
+                        }
+
+                        >ul {
+                            width: 100%;
+                            height: 450px;
+                            position: absolute;
+                            background-color: black;
+                            top: 75px;
+                            left: 0;
+                            display: flex;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: 0.25s;
+
+
+
+                            >.previous {
+
+                                width: 80%;
+                                height: 100%;
+                                position: relative;
+                                display: flex;
+                                flex-wrap: wrap;
+                                font-size: 30px;
+                                background-color: rgba(56, 48, 48, 0.418);
+
+                                >p {
+                                    width: 100%;
+                                    height: 10%;
+                                    text-align: center;
+                                }
+
+                                >.row {
+                                    flex-wrap: nowrap;
+                                    height: 99%;
+
+                                    >.brazil {
+                                        width: 50%;
+                                        height: 90%;
+                                        font-size: 16px;
+
+                                        >div {
+                                            width: 100%;
+                                            height: 100%;
+                                            position: relative;
+
+                                            >figure {
+                                                width: 100%;
+                                                height: 100%;
+
+                                                >img {
+                                                    border-radius: 10%;
+                                                    object-fit: cover;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    padding: 5px;
+
+                                                }
+
+                                                >h2,
+                                                h3 {
+                                                    position: absolute;
+                                                    text-transform: capitalize;
+                                                    padding-left: 15px;
+                                                }
+
+                                                >h2 {
+                                                    top: 95px;
+                                                    left: 16px;
+                                                    font-size: 40px;
+
+                                                    >a {
+
+                                                        &::after {
+                                                            width: 0;
+                                                            height: 1.5px;
+                                                            z-index: 2;
+                                                            background-color: white;
+                                                            content: '';
+                                                            position: absolute;
+                                                            bottom: -1px;
+                                                            left: 10px;
+                                                            opacity: 0;
+                                                            transition: .4s;
+                                                        }
+                                                    }
+
+                                                    &:hover {
+                                                        >a {
+                                                            &::after {
+                                                                opacity: 1;
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                >h3 {
+                                                    &:first-of-type {
+                                                        top: 45px;
+                                                        left: 20px;
+                                                        font-size: 20px;
+                                                    }
+                                                }
+
+                                                >.date {
+                                                    top: 160px;
+                                                    left: 18px;
+                                                    font-size: 18px;
+                                                }
+                                            }
+
+                                        }
+
+
+                                    }
+
+                                }
+                            }
+
+                            >.next {
+                                width: 25%;
+                                height: 100%;
+                                position: relative;
+                                display: flex;
+                                flex-wrap: wrap;
+                                font-size: 30px;
+                                background-color: rgba(56, 48, 48, 0.418);
+
+                                >p {
+                                    width: 100%;
+                                    height: 10%;
+                                    text-align: center;
+                                }
+
+                                >.row {
+                                    flex-wrap: nowrap;
+                                    height: 99%;
+
+                                    >.brazil {
+                                        width: 100%;
+                                        height: 90%;
+                                        font-size: 16px;
+
+                                        >div {
+                                            width: 100%;
+                                            height: 100%;
+                                            position: relative;
+
+                                            >figure {
+                                                width: 100%;
+                                                height: 100%;
+
+                                                >img {
+                                                    border-radius: 10%;
+                                                    object-fit: cover;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    padding: 5px;
+
+                                                }
+
+                                                >h2,
+                                                h3 {
+                                                    position: absolute;
+                                                    text-transform: capitalize;
+                                                }
+
+                                                >h2 {
+                                                    top: 110px;
+                                                    left: 16px;
+                                                    font-size: 40px;
+
+                                                    >a {
+                                                        &::after {
+                                                            width: 0;
+                                                            height: 1.5px;
+                                                            z-index: 2;
+                                                            background-color: white;
+                                                            content: '';
+                                                            position: absolute;
+                                                            bottom: -1px;
+                                                            left: 10px;
+                                                            opacity: 0;
+                                                            transition: .4s;
+                                                        }
+                                                    }
+
+                                                    &:hover {
+                                                        >a {
+                                                            &::after {
+                                                                opacity: 1;
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                >h3 {
+                                                    &:first-of-type {
+                                                        top: 45px;
+                                                        left: 20px;
+                                                        font-size: 20px;
+                                                    }
+                                                }
+
+                                                >.date {
+                                                    top: 170px;
+                                                    left: 16px;
+                                                    font-size: 18px;
+                                                }
+                                            }
+
+                                        }
+
+
+                                    }
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                /* end of menu  */
+                >.login {
+                    >li {
+                        color: red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:first-of-type {
+                            background-color: rgba(255, 255, 255, 0.897);
+                            text-transform: capitalize;
+                            border-radius: 8%;
+                            padding: 15px;
+                            transition: 0.4s;
+                            font-size: 22px;
+
+                            &:hover {
+                                background-color: rgb(43, 38, 38);
+                                color: white;
+
+                            }
+                        }
+
+                        &:last-of-type {
+                            color: white;
+                            margin-right: 30px;
+                            transition: 0.4s;
+
+                            &:hover {
+                                scale: 1.32;
+                            }
+                        }
+                    }
+
+                }
+
+                /* end login  */
+
+            }
+        }
+    }
+
+    /* end of header  */
+
+    >.news {
+        width: 100%;
+        height: calc(100vh - 75px);
+        position: absolute;
+        display: flex;
+        top: 75px;
+        left: 0;
+        border: 5px solid black;
+        background-color: black;
+
+        >.big {
+            width: 70%;
+            height: 100%;
+            border: 4px solid rgba(255, 255, 255, 0.288);
+            border-radius: 2.5%;
+
+            &:hover {
+                >figure>img {
+                    scale: 1.1;
+                }
+            }
+
+
+
+
+            >figure {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                border-radius: 2%;
+
+
+                &::after {
+                    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.842) 92%);
+                    border-radius: 1.5%;
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                >p {
+                    font-family: "Audiowide", sans-serif;
+                    color: white;
+                    position: absolute;
+                    z-index: 9;
+                    bottom: 10px;
+                    left: 25px;
+                    font-size: 60px;
+                    margin-left: 25px;
+                    word-spacing: 10px;
+                    transition: 0.4s;
+                    text-transform: capitalize;
+
+
+                    &:hover {
+                        scale: 1.02;
+                        text-decoration: underline;
+                    }
+
+
+
+                }
+
+                >img {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 2.5%;
+                    transition: 1s;
+                }
+            }
+        }
+
+        >.small {
+            width: 30%;
+            height: 100%;
+            margin-left: 1%;
+
+
+            >.snews {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+
+                >div {
+                    width: 100%;
+                    border: 4px solid rgba(255, 255, 255, 0.288);
+                    border-radius: 1%;
+                    padding: 8px;
+                    margin-top: 10px;
+
+                    >figure {
+                        width: 100%;
+                        height: 117px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+
+                        >img {
+                            width: 40%;
+                            height: 100%;
+                            border-radius: 2%;
+                            object-fit: cover;
+                        }
+
+                        >p {
+                            text-align: center;
+                            width: 60%;
+                            margin-left: 4%;
+                            font-size: 17px;
+                            color: white;
+                            font-family: "Audiowide", sans-serif;
+                            transition: 0.5s;
+
+                            &:hover {
+                                scale: 1.05;
+                                text-decoration: underline;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/* end of first vh */
+.svh {
+    width: 100%;
+
+    /* background-color: black; */
+    >.box1 {
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        /* border: 4px solid rgba(255, 255, 255, 0.288); */
+        padding: 25px 15px;
+        /* border-radius: 1%; */
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        div {
+            /* width: 25%; */
+            z-index: 95px;
+            padding: 5px;
+            background-color: rgba(207, 192, 192, 0.315);
+            border-radius: 3%;
+            transition: .5s;
+            margin-top: 20px;
+
+            &:hover {
+                scale: 1.07;
+
+                >h4 {
+                    color: black;
+                }
+            }
+
+            >h4 {
+                font-size: 20px;
+                letter-spacing: 5px;
+                color: white;
+                font-family: "Audiowide", sans-serif;
+                text-transform: capitalize;
+
+                >a {
+                    width: 340px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 5px;
+
+                    >i {
+                        >svg {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    >.s2025 {
+        width: 100%;
+        height: 600px;
+        background-color: black;
+        display: flex;
+
+        >div {
+            &:first-of-type {
+                background-color: rgb(255, 94, 0);
+            }
+
+            &:nth-child(2) {
+                background-color: rgb(255, 94, 0);
+            }
+
+            &:nth-child(3) {
+                background-color: rgb(34, 34, 151);
+            }
+
+            border-radius: 15%;
+            margin: 30px 35px;
+            width: 33%;
+            height: 95%;
+            position: relative;
+            border: 2px solid white;
+
+            >figure {
+                display: flex;
+                flex-wrap: wrap;
+                width: 60%;
+                height: 100%;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+
+                >img {
+                    position: absolute;
+                    width: 35%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                    right: 15px;
+                    top: 0;
+                }
+
+                >* {
+                    font-family: "Audiowide", sans-serif;
+                    text-transform: capitalize;
+                }
+
+                >h4 {
+                    margin-left: 10px;
+
+                    &:first-of-type {
+                        font-size: 50px;
+                    }
+
+                    &:last-of-type {
+                        font-size: 25px;
+                    }
+                }
+
+                >h3 {
+                    display: flex;
+                    justify-content: center;
+
+                    &:hover {
+                        >a {
+                            scale: 1.1;
+                            background-color: rgba(0, 0, 0, 0.26);
+                            border-radius: 5%;
+                        }
+                    }
+
+                    >a {
+                        padding: 5px;
+                        font-size: 35px;
+                        width: 90%;
+                        text-align: center;
+                        margin-left: 5%;
+                        transition: 0.5s;
+                    }
+                }
+
+                >p {
+                    margin-top: 20%;
+                    font-size: 35px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+
+}
